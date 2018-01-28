@@ -17,7 +17,7 @@ a{outline:none; text-decoration:none;}
 #header #hgroup #na{float:right;margin-right: 5%;padding:10px 0;}
 #header #hgroup #logo{padding:40px 0 20px 0;}
 #header nav{display:block; float:top; padding:10px 10px;}
-#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
+#header nav li{display:inline; margin-right:25px;}
 /*----------------------------------------------Content Area-------------------------------------*/
 /* ------Slider-----*/
 
@@ -31,7 +31,9 @@ a{outline:none; text-decoration:none;}
 #homepage #services article{margin-top: 0;display:block;text-align:center;}
 
 /* ------Main Content-----*/
-
+#co #con ul{margin:0 150px; font-size:13px; padding:10px;list-style: none;float:top;}
+#co #con ul li{float:left;margin-left: 50px;}
+#co #con ul li p:last-child{padding: 0 0 20px 0;}
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0;text-align-last:center; }
