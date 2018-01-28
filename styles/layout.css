@@ -1,8 +1,21 @@
 body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#ffffff;}
 a{outline:none; text-decoration:none;}
-.fl_left{float:left;width: 50%;}
+h3{font-size:15px;}
+button{border:solid black 1px;color: white;padding: 10px 30px;background-color:black;}
+.button1 {border-radius: 50% 50%;padding:15px 15px;color: black;background-color: white;border: solid lightgrey 5px;}
+.button2 {border-radius: 50% 50%;padding:15px 15px;background-color: black;}
+.button3 {border-radius: 50% 50%;padding:12px 16px;color: black;background-color: white;border: solid WHITE 1px;}
+.button4 {border-radius: 50% 50%;padding:12px 12px;color: black;background-color: white;border: solid WHITE 1px;}
+.fl_left{float:left;width: 50%;border-right: solid lightgrey 1px;}
 .fl_right{float:right;width: 50%;}
-
+.content{width:100%;height: auto;}
+.left{width: 20%;height: auto;float: left;}
+.middle{width: 50%;height: auto;float: left;}
+.right{width: 20%;height: auto;float: left;}
+.botto{width:100%;height: auto;float:left;}
+*{box-sizing: border-box;}
+#h{float:left;width:37%;margin-left: 20px;}
+#m{float:left;margin-top: 0;padding:0 20px }
 /*----------------------------------------------HTML 5 Overrides-------------------------------------*/
 
 
@@ -15,25 +28,39 @@ a{outline:none; text-decoration:none;}
 #header{text-align: center;}
 #header #hgroup p{margin-top: 0px;background-color:rgba(220,220,220, 0.5);padding:10px 0;}
 #header #hgroup #na{float:right;margin-right: 5%;padding:10px 0;}
-#header #hgroup #logo{padding:40px 0 20px 0;}
-#header nav{display:block; float:top; padding:10px 10px;}
-#header nav li{display:inline; margin-right:25px;}
+#header #hgroup #logo{padding:40px 0 40px 0;}
+#header #hgroup nav{display:block;float:top;padding:0 20%;}
+#header #hgroup nav ul{display:block;list-style: none;}
+#header #hgroup nav ul li{ padding:20px;float :left;}
 /*----------------------------------------------Content Area-------------------------------------*/
 /* ------Slider-----*/
+#container .content{margin: 50px 50px;}
+#container .middle #slider img{padding:15px 10px;}
+#container .left img{margin-left: 10%;padding: 10px 10px;}
+#container .right {padding: 10px 0;}
+#container .right ul {float: left;padding: 0 0;}
+#container .right ul li{margin-left: 20px;padding: 2px 0;}
+#container #bottom{display:block;text-align: center;margin:0}
+#container #bottom figure ul{list-style: none;margin: 0px;padding:0;}
+#container #bottom figure ul li{padding:20px 45px 70px 0;margin-right: 0px;display:block; float:left;}
+#container #bottom figure ul li img{margin-left: 20px;}
 
-#container #slider{margin:50px;}
-#container #slider figure ul{float:top;list-style:none;margin:0; padding:0;}
-#container #slider figure ul li{float:left; width:180px; height:150px; margin:inherit; padding:10px;}
-#container #slider figure figcaption{display:block; float:center;}
 
 /* ------Homepage-----*/
-#homepage #services{margin:0;display:block;text-align:center;padding: 100px;background-color:rgba(220,220,220,0.5);}
-#homepage #services article{margin-top: 0;display:block;text-align:center;}
+#homepage{display:block;width: 100%;height: auto;float: left;background-color: rgba(220,220,220, 0.5);}
+#homepage #services{margin:30px 50px;text-align:center;font-size: 14px;}
+#homepage #services article{display:block;padding: 0px 10% 0px 10%;}
+#homepage #services article p{padding: 10px 10% 10px 10%;}
+
 
 /* ------Main Content-----*/
-#co #con ul{margin:0 150px; font-size:13px; padding:10px;list-style: none;float:top;}
-#co #con ul li{float:left;margin-left: 50px;}
-#co #con ul li p:last-child{padding: 0 0 20px 0;}
+#navbar{width: 100%;height: auto;}
+#navbar #innernavbar {margin:30px 100px; font-size:13px; padding:10px;}
+#navbar #innernavbar nav{float:right;padding:0 10px;}
+#navbar #innernavbar .mail input{padding: 10px 10px;border-width: thin;}
+#navbar #innernavbar ul{ font-size:13px;list-style: none;float:bottom;}
+#navbar #innernavbar ul li{float:left;margin-left: 50px;}
+#navbar #innernavbar ul li p:last-child{padding: 0 0 20px 0;}
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0;text-align-last:center; }
