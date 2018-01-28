@@ -4,7 +4,7 @@ h3{font-size:15px;}
 button{border:solid black 1px;color: white;padding: 10px 30px;background-color:black;}
 .button1 {border-radius: 50% 50%;padding:15px 15px;color: black;background-color: white;border: solid lightgrey 5px;}
 .button2 {border-radius: 50% 50%;padding:15px 15px;background-color: black;}
-.button3 {border-radius: 50% 50%;padding:12px 16px;color: black;background-color: white;border: solid WHITE 1px;}
+.button3,#bm {border-radius: 50% 50%;padding:12px 16px;color: black;background-color: white;border: solid WHITE 1px;}
 .button4 {border-radius: 50% 50%;padding:12px 12px;color: black;background-color: white;border: solid WHITE 1px;}
 .fl_left{float:left;width: 50%;border-right: solid lightgrey 1px;}
 .fl_right{float:right;width: 50%;}
@@ -13,16 +13,84 @@ button{border:solid black 1px;color: white;padding: 10px 30px;background-color:b
 .middle{width: 50%;height: auto;float: left;}
 .right{width: 20%;height: auto;float: left;}
 .botto{width:100%;height: auto;float:left;}
+.ho,.hm{display:none;}
+
 *{box-sizing: border-box;}
 #h{float:left;width:37%;margin-left: 20px;}
-#m{float:left;margin-top: 0;padding:0 20px }
+
 /*----------------------------------------------HTML 5 Overrides-------------------------------------*/
 
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 @media (min-width: 320px) and (max-width: 480px) {
+body{margin:0 0; padding:0; font-size:13px;}
+.hi{display: none;}
+.ho{display: block;}
+.hm{display: block;margin-left: 30%;}
+#h{float:left;width:21%;}
+#homepage{display: none;}
+.middle{width: 100%;height: auto;float: left;}
+.right{width: 100%;height: auto;float:left;}
+.bu{width: 100%;height: auto;float:left;}
+#header #hgroup p{background-color:rgba(220,220,220, 0.5);padding: 0;}
+#header #hgroup #na{float:right;padding:0 0;}
+#header #hgroup #na img{float:left;width:18px;height:auto;padding:0 0;}
+#header #hgroup #logo img{width:50%;float: center;margin-top:-300px;height: auto;}
+#navbar #innernavbar ul{ margin: 0;float:top;padding:0;font-size:10px;text-align: center;list-style: none;}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+}
 
-body{background-color: lightgrey;}
+.sidenav a {
+    padding: 0 0 0 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left:0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 10px;}
+}
+#container .content{margin: 10px 10px;}
+#container .middle #slider img{width:device-width;}
+#container .right {padding: 2px 0;}
+#container #bottom{margin:0;width: 100%;}
+#container #bottom a{display: none;}
+#navbar{width: 100%;height: auto;}
+#navbar #innernavbar {font-size:13px; padding:100px;}
+#navbar #innernavbar .mail span{padding: 0 0;font-size:20px ;}
+#navbar #innernavbar .mail input{width: 100%;padding: 10px 10px;float:left;;border-width: thin;}
+#navbar #innernavbar .mail button{width: 100%;padding: 10px 10px;float:left;border-width: thin;}
+#navbar #innernavbar .tu{margin-top: -220px;margin-right: 75px}
+
+
+
+
+#footer img{width:50%;height: auto;padding: 20px;}
 }
 /*----------------------------------------------Generalise-------------------------------------*/
 
@@ -37,7 +105,7 @@ body{background-color: lightgrey;}
 #header #hgroup nav ul li{ padding:20px;float :left;}
 /*----------------------------------------------Content Area-------------------------------------*/
 /* ------Slider-----*/
-#container .content{margin: 50px 50px;}
+#container .content{margin: 15px 15px;}
 #container .middle #slider img{padding:15px 10px;}
 #container .left img{margin-left: 10%;padding: 10px 10px;}
 #container .right {padding: 10px 0;}
@@ -58,10 +126,10 @@ body{background-color: lightgrey;}
 
 /* ------Main Content-----*/
 #navbar{width: 100%;height: auto;}
-#navbar #innernavbar {margin:30px 100px; font-size:13px; padding:10px;}
-#navbar #innernavbar nav{float:right;padding:0 10px;}
+#navbar #innernavbar {margin:30px 10px ;font-size:13px; padding:10px;}
+#navbar #innernavbar nav{float:right;margin-right: 50px;padding:0 10px;}
 #navbar #innernavbar .mail input{padding: 10px 10px;border-width: thin;}
-#navbar #innernavbar ul{ font-size:13px;list-style: none;float:bottom;}
+#navbar #innernavbar ul{margin-left:80px ; font-size:13px;list-style: none;float:bottom;}
 #navbar #innernavbar ul li{float:left;margin-left: 50px;}
 #navbar #innernavbar ul li p:last-child{padding: 0 0 20px 0;}
 /*----------------------------------------------Footer-------------------------------------*/

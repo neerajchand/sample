@@ -10,17 +10,27 @@
   <div>
     <header id="header" class="clear">
      <div id="hgroup">
-        <p>FREE STANDARD DOMESTIC SHIPPING WITHIN UNITED STATES</p>
+        <p class="hi">FREE STANDARD DOMESTIC SHIPPING WITHIN UNITED STATES</p>
+        <p class="ho">FREE SHIPPING ON ALL U.S. ORDERS</p>
+         <span class="ho" style="font-size:30px;cursor:pointer;float:left;margin-left:10px;" onclick="openNav()">&#9776;</span>
         <div id="na">
-          <span style="font-size:16px;">search</span><img src="images/search.png"  width="14" height="14" alt="">&nbsp;
-          <span style="font-size:16px;">account</span><img src="images/account.png"width="14" height="14"  alt="">&nbsp;
-          <span style="font-size:16px;">cart</span><img src="images/cart.png" width="14" height="14" alt="">
+          <a href="#"><span class="hi"style="font-size:16px;">search</span><img src="images/search.png"  width="14" height="14" alt=""></a>&nbsp;
+          <a href="#"><span class="hi"style="font-size:16px;">account</span><img class="hi" src="images/account.png"width="14" height="14"  alt=""></a>&nbsp;
+          <a href="#"><span class="hi"style="font-size:16px;">cart</span><img src="images/cart.png" width="14" height="14" alt=""></a>
         </div>
-        <div id="logo">
+        <img class="hm" style="width:45%;padding:9px 10px;"src="images/logo-text.png" alt="">
+        <div class="hi" id="logo">
           <img src="images/logo-text.png" alt="">
         </div>
+
+    <div id="mySidenav" class="sidenav">
+
+
       <nav>
-        <ul>
+       <ul>
+          <li class="ho">
+            <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </li>
           <li>
             <a href="#">NEW ARRIVALS</a>
           </li>
@@ -43,7 +53,8 @@
             <a href="#">CAMPAIGN</a>
           </li>
         </ul>
-      </nav>
+       </nav>
+      </div>
      </div>
     </header>
   </div>
@@ -74,12 +85,14 @@
          &nbsp; &nbsp;<button class="button button3" name="button" >M</button>
          &nbsp; &nbsp;<button class="button button3" name="button" >L</button>
          &nbsp; &nbsp;<button class="button button4" name="button" >XL</button><br><br>
-         &nbsp; &nbsp;<button class="button" name="button" style="width:100%;" > ADD TO BAG </button><br><br>
+        <span>SIZE:SELECT A SIZE</span><br><br>
+        <button class="bu" name="button" style="width:95%;" > ADD TO BAG </button><br><br>
 
-       &nbsp;<button class="button button3" name="button" style="width:100%;border-radius:0 0;border: solid lightgrey 1px;" > SAVE FOR LATER </button><br>
-      <br><h3>FREE SHIPPING - EASY RETURNS</h3><br><br>
+       &nbsp;<button class="hi" id="bm" name="button" style="width:95%;border-radius:0 0;border: solid lightgrey 1px;" > SAVE FOR LATER </button><br>
+      <h3>FREE SHIPPING - EASY RETURNS</h3><br><br>
       <b style="font-size:15px;left:0;">DETAILS</b>
-      <ul>
+      <br>
+      <ul style="width:80%;">
         <li>Relaxed Fit</li>
         <li>Made in the USA</li>
         <li>Model is 5'9 wearing size S</li>
@@ -95,32 +108,47 @@
     <div class="botto">
       <br><br>
       <hr id="h">
-      <h3 id="m">PRODUCTS YOU MIGHT LIKE</h3>
+      <h3 style="float:left;margin-top: 0;padding:0 20px ;"class="hi">PRODUCTS YOU MIGHT LIKE</h3>
+      <h3 style="float:left;margin-top: 0;padding:0 0;"class="ho">&nbsp;&nbsp;&nbsp;&nbsp;YOU MIGHT ALSO LIKE</h3>
       <hr id="h">
       <br><br>
       <nav>
        <figure>
         <ul>
         <li><img src="images/might-like1.png" width=358px height=446px  alt="">
-          <figcaption>SANDED JERSY MUSCLE TANK</figcaption>$70.00</li>
+          <a><figcaption>SANDED JERSY MUSCLE TANK</figcaption>$70.00</a></li>
         <li><img src="images/might-like2.png" width=358px height=446px alt="">
-          <figcaption>HERITAGE KNIT CARDINAG</figcaption>$70.00</li>
+          <a><figcaption>HERITAGE KNIT CARDINAG</figcaption>$70.00</a></li>
         <li><img src="images/might-like3.png" width=358px height=446px alt="">
-          <figcaption>SLEEVELESS COWL TANK</figcaption>$70.00</li>
+          <a><figcaption>SLEEVELESS COWL TANK</figcaption>$70.00</a></li>
         </ul>
        </figure>
-      </nav>
+
+     </nav>
+      <div class="ho">
+        <br class="ho">
+        <hr class="ho"style="width:90%;"><br>
+
+        <h3>LET'S GET SOCIAL<br>&#64;<small>instagram</small></h3>
+       <figure style="display:grid">
+         <img src="images/insta1.png" width=189px height=188px alt="">
+         <img src="images/insta2.png" width=189px height=188px alt="">
+         <img src="images/insta3.png" width=189px height=188px alt="">
+         <img src="images/insta4.png" width=189px height=188px alt="">
+         <br class="ho"><br class="ho"><br class="ho"><br class="ho">
+       </figure>
+    </div>
    </div>
   </section>
 </div>
   <!-- main content -->
-<div id="homepage">
+<div id="homepage" class="hi">
 
     <!-- services area -->
-    <section id="services" class="clear">
+    <section id="services" class="hi">
       <article class="fl_left" >
-        <strong style="font-size:16px">Our Mission</strong>
-        <p>As a company, we're a lot like you, seasoned
+        <strong class="hi"style="font-size:16px">Our Mission</strong>
+        <p class="hi">As a company, we're a lot like you, seasoned
           enough to know what you're looking for, stylish
           enough to look for what's next. We believe no
           woman wants to be basic, but every woman
@@ -130,10 +158,8 @@
           change, but there's always more to come...</p>
       </article>
       <article class="fl_right">
-
-        <strong style="font-size:16px">Local Production</strong>
-
-        <p>As a Southern California-based brand, Three
+        <strong class="hi" style="font-size:16px">Local Production</strong>
+        <p class="hi">As a Southern California-based brand, Three
           Dots prides itself on being made in the USA.
           With 95% of our clothing created at our corpo-
           rate office, we believe ih transparency every
@@ -145,42 +171,45 @@
       </article>
     </section>
 </div>
-<div style="width:100%;height:30px;background-color:white;float:left;">
-</div>
+    <div class="hi" style="width:100%;height:30px;background-color:white;float:left;"></div>
 <div id="navbar">
 
     <hr style="width:90%;">
-
-<section id="innernavbar">
+ <div id="innernavbar">
 
   <form class="mail" style="font-size:16px;" action="" method="post">
-        sign up for mailing list &nbsp;&nbsp;<input type="email" value="your email address "> &nbsp;&nbsp;<button type="button" name="sign up">sign up</button>
-  <nav>
+        &nbsp;&nbsp;<span style="margin-left:100px ;">sign up for mailing list</span><br class="ho"><br class="ho"> <input type="email" value="your email address "> &nbsp;&nbsp;<br class="ho"><button type="button" name="sign up">sign up</button>
+  <nav class="tu">
     stay connected&nbsp;&nbsp;
     <a href="#"><img src="images/social/insta.png" width="auto" height="16" alt=""></a>&nbsp;
     <a href="#"><img src="images/social/facebook.png" width="auto" height="16" alt=""></a>&nbsp;
     <a href="#"><img src="images/social/pintrest.png" width="auto" height="16" alt=""></a>&nbsp;
     <a href="#"><img src="images/social/twitter.png" width="auto" height="16" alt=""></a>&nbsp;
     <a href="#"><img src="images/social/youtube.png" width="auto" height="16" alt=""></a>&nbsp;
+
   </nav>
 </form>
+<br class="ho"><br class="ho"><br class="ho">
+<hr class="ho"style="width:100%;">
+
   <ul>
-    <li><h3>ABOUT THREE DOTS</h3>
+    <li><a href="#"><h3>ABOUT THREE DOTS</h3></a>
         <p><a href="#">About Us</a></p>
         <p><a href="#">Contact</a></p></li>
-    <li><h3>CUSTOMER SERVICE</h3>
+    <li><a href="#"><h3>CUSTOMER SERVICE</h3></a>
         <p><a href="#">Shipping Information</a></p>
         <p><a href="#">Returns</a></p>
         <p><a href="#">Gifts Cards</a></p>
         <p><a href="#">Wholesale</a></p>
         <p><a href="#">FAQ</a></p></li>
-    <li><h3>MY ACCOUNT</h3>
+    <li><a href="#"><h3>MY ACCOUNT</h3></a>
         <p><a href="#">Account</a></p>
         <p><a href="#">Order History</a></p>
         <p><a href="#">My Cart</a></p></li>
-    <li><h3>STORE LOCATION</h3></li>
+    <li><a href="#"><h3>STORE LOCATION</h3></a></li>
+    <li class="ho"><a href="#"><h3>NEED TO TALK?</h3></a><a href="#"><h3>GIVE US CALL AT 1-888-311-3687</h3></a></li>
   </ul>
-</section>
+ </div>
 </div>
 
   <div >
@@ -194,5 +223,14 @@
       <p class="f"> &copy; 2017 EL LLC. All Rights Reserved. </p>
     </footer>
   </div>
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
 </body>
 </html>
